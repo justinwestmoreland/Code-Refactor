@@ -2,29 +2,32 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* Replaced >div=class "header"> and replaced with selector <header>  */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+/* Removed .header and .h1 class .seo class is descriptive enough */
+.seo {
     color: #d9dcd6;
 }
 
-.header div {
+header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +35,9 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
+/* removed list style type from header, ul, and li. Unnecessary property and value */
 
-.header div ul li {
+header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -86,55 +87,27 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* condensing .benefit-lead, .benefit-brand, and .benefit-cost to one selector due to having the same properties and values. using class = benefit */
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* condensing same .benefit-lead, .benefit-brand, and .benefit-cost to one selector due to having the same properties and values. using class = benefit and class=h3 */
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* condensing same .benefit-lead, .benefit-brand, and .benefit-cost to one selector due to having the same properties and values. using class = benefit and class=img */
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/*  adding class "perks" to consolidate three previous classes --> */
+.perks {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,47 +116,13 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* Consolidating all to .perks img */
+.perks img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+/* Consolidating all to .perks h2 */
+.perks h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
