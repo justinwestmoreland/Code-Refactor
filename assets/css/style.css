@@ -26,8 +26,8 @@ header h1 {
 .seo {
     color: #d9dcd6;
 }
-
-header div {
+ /* changed from .header div to header nav */
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -35,9 +35,8 @@ header div {
     font-size: 20px;
 }
 
-/* removed list style type from header, ul, and li. Unnecessary property and value */
-
-header div ul li {
+/* removed list style type from header, ul, and li. Unnecessary property and value. Changed div tag to nav */
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -70,13 +69,14 @@ p {
     margin-left: 25px;
 }
 
-.content {
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+/* Consolidated all redundant classes into sesmantic tag <aside>  */
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -87,27 +87,27 @@ p {
     background-color: #2589bd;
 }
 
-/* condensing .benefit-lead, .benefit-brand, and .benefit-cost to one selector due to having the same properties and values. using class = benefit */
-.benefit {
+/* Consolidated all redundant classes into sesmantic tag <figure>  */
+figure {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* condensing same .benefit-lead, .benefit-brand, and .benefit-cost to one selector due to having the same properties and values. using class = benefit and class=h3 */
-.benefit h3 {
+/* Consolidated all redundant classes into sesmantic tag <figure> */
+figure h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* condensing same .benefit-lead, .benefit-brand, and .benefit-cost to one selector due to having the same properties and values. using class = benefit and class=img */
-.benefit img {
+/* Consolidated all redundant classes into sesmantic tag <figure>  */
+figure img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/*  adding class "perks" to consolidate three previous classes --> */
-.perks {
+/* Consolidated all redundant classes into sesmantic tag <section> */
+section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -116,24 +116,25 @@ p {
     color: #ffffff;
 }
 
-/* Consolidating all to .perks img */
-.perks img {
+/* Changed CSS to recognize new semantic tag*/
+section img {
     max-height: 200px;
 }
 
-/* Consolidating all to .perks h2 */
-.perks h2 {
+/* Changed CSS to recognize new semantic tag */
+section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.footer {
+/* changed .footer to footer to style new semantic <footer> tag */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }

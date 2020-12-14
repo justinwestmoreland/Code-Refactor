@@ -11,7 +11,8 @@
     <!-- Replaced >div=class "header"> and replaced with selector <header>  -->
     <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+        <!-- Changed the <div> tag to <nav> -->
+        <nav>
             <ul>
                 <li>
                     <a href="index.html#search-engine-optimization">Search Engine Optimization</a>
@@ -23,13 +24,14 @@
                     <a href="index.html#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
     <!-- Added role and aria-label for accessibility. -->
     <div role="img" aria-label="Picture of people around a table working" class="hero"> </div>
-    <div class="content">
-        <!-- Changed Class to "perks" due to css optimization. Inserted id based on header hyperlink to direct move to this section of the webpage  -->
-        <div id="search-engine-optimization" class="perks">
+    <!-- Replaced class "content" with semantic tag <main>  -->
+    <main>
+        <!-- Removed <div> tag and inserted semantic <section> tag. Inserted id based on header hyperlink to direct move to this section of the webpage  -->
+        <section id="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg"
                 alt="Picture of Search Engine Optimization Workflow" class="float-left" />
             <h2>Search Engine Optimization</h2>
@@ -38,9 +40,9 @@
                 travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase
                 your visibility and find the right customers for your business.
             </p>
-        </div>
-        <!-- Changed Class to "perks" due to css optimization. Inserted id based on header hyperlink to direct move to this section of the webpage  -->
-        <div id="online-reputation-management" class="perks">
+        </section>
+        <!-- Removed <div> tag and inserted semantic <section> tag. Inserted id based on header hyperlink to direct move to this section of the webpage   -->
+        <section id="online-reputation-management">
             <img src="./assets/images/online-reputation-management.jpg" alt="Picture of Laptop with word Reputation"
                 class="float-right" />
             <h2>Online Reputation Management</h2>
@@ -49,9 +51,9 @@
                 internet connection to say whatever they want about your business. Online Reputation Management gives
                 you the control over what potential customers see when they search for your business.
             </p>
-        </div>
-        <!-- Changed Class to "perks" due to css optimization. Inserted id based on header hyperlink to direct move to this section of the webpage  -->
-        <div id="social-media-marketing" class="perks">
+        </section>
+        <!-- Removed <div> tag and inserted semantic <section> tag. Inserted id based on header hyperlink to direct move to this section of the webpage  -->
+        <section id="social-media-marketing">
             <img src="./assets/images/social-media-marketing.jpg"
                 alt="Picture of group working around a table discussing marketing" class="float-left" />
             <h2>Social Media Marketing</h2>
@@ -60,26 +62,30 @@
                 determine which platforms are suited to your brand, using analytics to find the right markets and
                 increase your lead generation.
             </p>
-        </div>
-    </div>
-    <div class="benefits">
-        <div class="benefit">
+        </section>
+    </main>
+    <!-- Replaced redundant <div> classes with semantic tag <aside> -->
+    <aside>
+        <!-- Removed <div> added semeantic <figure> tag -->
+        <figure>
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" alt="Image of a process generating money" /> 
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly
                 to your website.
             </p>
-        </div>
-        <div class="benefit">
+        </figure>
+        <!-- Removed <div> added semeantic <figure> tag --> 
+        <figure>
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" alt="Image of light bulb generating visibility" />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility
                 for your business.
             </p>
-        </div>
-        <div class="benefit">
+        </figure>
+        <!-- Removed <div> added semeantic <figure> tag --> 
+        <figure>
             <h3>Cost Management</h3>
             <!-- Removed </img> tag below -->
             <img src="./assets/images/cost-management.png" alt="Image of process saving money">
@@ -87,14 +93,15 @@
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer
                 need to advertise your page.
             </p>
-        </div>
-    </div>
-    <div class="footer">
+        </figure>
+    </aside>
+    <!-- Removed <div class="footer" and changed to semantic <footer> tag -->
+    <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </div>
+    </footer>
 </body>
 
 </html>
